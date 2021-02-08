@@ -5,5 +5,25 @@
 	<title>タイトル</title>
 </head>
 <body>
+	<body>
+
+	<%# 検索結果がない場合 "No results."を表示する %>
+	<%# <% if @results.empty? %>
+		<%# advanced考えると消したほうが良いかもしれない %>
+		<%# <p>No results.</p> %>
+
+	<%# 検索結果がある場合 タイトルと概要を表示する %>
+	<%# <% unless @results.empty? %>
+		<% @results.each do |result| %>
+			<p>
+				<b><%= result[1]["title"] %></b>
+				<br>
+				<%= result[1]["extract"] %>
+			</p>
+		<% end %>
+
+	<%# <% end %>
+
+</body>
 </body>
 </html>
