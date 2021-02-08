@@ -43,7 +43,6 @@ not_found do
 end
 
 get '/' do
-
     # もしkeywordクエリがあって、その中身があれば
     if params['keyword'] && !params['keyword'].empty?
 
@@ -71,7 +70,7 @@ get '/' do
 
     # もしクエリの内容が不十分だった場合
     else
-        "We need keyword after '/?keyword=' . For example: https://wikipedia-api-net.herokuapp.com/?keyword=Ruby"
-
+        # "We need keyword after '/?keyword=' . For example: https://wikipedia-api-net.herokuapp.com/?keyword=Ruby"
+        erb :index2
     end
 end
