@@ -1,1 +1,1 @@
-Life is Tech ! の教材で利用する `Sinatra` テンプレートです。
+Wikepediaの検索結果を表示するものです
